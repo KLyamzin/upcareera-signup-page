@@ -5,8 +5,106 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Signup | UpCareera</title>
   </head>
-  <body></body>
+  <body>
+    <div class="header" id="header">
+      <img src="assets/logo/upcareera_logo_2.svg" alt="UP Careera Logo" />
+      <form action="http://localhost" method="post">
+        <div class="login">
+          <p class="question">Have existing account?</p>
+          <p>
+            <!-- <label for="login_email">Email</label> -->
+            <input
+              type="email"
+              id="login_email"
+              name="login_email"
+              placeholder="*email..."
+              required
+            />
+          </p>
+          <p>
+            <!-- <label for="login_password">Password</label> -->
+            <input
+              type="password"
+              id="login_password"
+              name="login_password"
+              placeholder="*password..."
+              required
+            />
+          </p>
+          <btn type="submit">Login</btn>
+        </div>
+      </form>
+    </div>
+    <div class="content_box">
+      <div class="animation" id="animation">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player
+          src="https://assets4.lottiefiles.com/packages/lf20_gjmecwii.json"
+          background="transparent"
+          speed="1"
+          style="width: 300px; height: 300px"
+          hover
+          loop
+        ></lottie-player>
+      </div>
+      <p class="paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nobis,
+        deleniti voluptate velit, distinctio sequi minus commodi quibusdam at
+        quam minima nulla fugit hic fugiat labore possimus illum doloremque!
+        Quia.
+      </p>
+      <form action="http://localhost:8080/" method="post" class="signup">
+        <p>
+          <label for="first_name">First Name</label>
+          <input type="text" name="first_name" id="first_name" required />
+        </p>
+        <p>
+          <label for="last_name">Last Name</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="usernames@example.com"
+            required
+          />
+        </p>
+        <p>
+          <label for="email">Email</label>
+          <input type="text" name="last_name" id="last_name" required />
+        </p>
+        <p>
+          <label for="phone">Phone Address</label>
+          <input
+            type="phone"
+            name="phone"
+            id="phone"
+            placeholder="xxx-xxx-xxxx"
+            required
+          />
+        </p>
+        <p>
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" required />
+        </p>
+        <p>
+          <label for="confirm_password">Confirm Password</label>
+          <input
+            type="password"
+            name="confirm_password"
+            id="confirm_password"
+            required
+          />
+        </p>
+        <btn type="submit">Create Account</btn>
+      </form>
+      </div>
+
+    </div>
+    <div class="footer"></div>
+  </body>
 </html>
