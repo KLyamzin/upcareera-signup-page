@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  letter-spacing: 0.09rem;
 }
 .footer {
   height: 40px;
@@ -131,6 +132,11 @@ input:focus {
 }
 .error {
   color: red;
+  font-weight: 800;
+}
+.valid {
+  color: seagreen;
+  font-weight: 800;
 }
 .error-message {
   /* padding: 10px 40px; */
