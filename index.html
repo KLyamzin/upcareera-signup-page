@@ -16,7 +16,7 @@
   <body>
     <div class="header" id="header">
       <img src="assets/logo/upcareera_logo_2.svg" alt="UP Careera Logo" />
-      <form action="http://localhost" method="post">
+      <form action="" >
         <div class="login">
           <p>
             <!-- <label for="login_email">Email</label> -->
@@ -36,9 +36,11 @@
               name="login_password"
               placeholder="*password..."
               required
+              minlength="8"
             />
           </p>
-          <btn type="submit">Login</btn>
+          <button type="submit">Login</button>
+
         </div>
       </form>
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
@@ -64,29 +66,29 @@
         quam minima nulla fugit hic fugiat labore possimus illum doloremque!
         Quia.
       </p>
-      <form action="http://localhost:8080/" method="post" class="signup">
+      <form action="" class="signup">
         <p>
           <label for="first_name">First Name</label>
           <input type="text" name="first_name" id="first_name" required />
         </p>
         <p>
           <label for="last_name">Last Name</label>
+          <input type="text" name="last_name" id="last_name"  required />
+        </p>
+        <p>
+          <label for="email">Email</label>
           <input
-            type="email"
+          type="email"
             name="email"
             id="email"
-           
+            placeholder="username@example.com"
             required
           />
         </p>
         <p>
-          <label for="email">Email</label>
-          <input type="text" name="last_name" id="last_name"  placeholder="username@example.com" required />
-        </p>
-        <p>
           <label for="phone">Phone Number</label>
           <input
-            type="phone"
+            type="tel"
             name="phone"
             id="phone"
             placeholder="xxx-xxx-xxxx"
@@ -94,19 +96,23 @@
           />
         </p>
         <p>
-          <label for="password">Password</label>
-          <input type="password" name="password" id="password" required />
+          <label for="password error">Password</label>
+          <input type="password" name="password" id="password" required minlength="8" />
         </p>
         <p>
-          <label for="confirm_password">Confirm Password</label>
+          <label for="confirm_password error">Confirm Password</label>
           <input
             type="password"
             name="confirm_password"
             id="confirm_password"
             required
+            minlength="8"
           />
         </p>
-        <btn type="submit">Create Account</btn>
+        <div class="error-message">
+          Passwords did not match. Please try again.
+        </div>
+        <button >Create Account</button>
       </form>
       </div>
 
