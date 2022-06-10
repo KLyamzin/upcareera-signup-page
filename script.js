@@ -4,6 +4,7 @@ const form = document.querySelector("form.signup");
 const password = document.querySelector("#password");
 const confirmPassword = document.querySelector("#confirm_password");
 const errorMessage = document.querySelector(".error-message");
+const telNumber = document.querySelector("phone");
 function myFunction() {
   if (hamburger.style.display === "flex") {
     hamburger.style.display = "none";
@@ -11,6 +12,7 @@ function myFunction() {
     hamburger.style.display = "flex";
   }
 }
+
 form.addEventListener("submit", (e) => {
   if (password.value != confirmPassword.value) {
     console.log(password.value + " and " + confirmPassword.value);
