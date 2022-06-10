@@ -8,14 +8,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Signup | UpCareera</title>
+    <script type="text/javascript" src="script.js" defer></script>
   </head>
   <body>
     <div class="header" id="header">
       <img src="assets/logo/upcareera_logo_2.svg" alt="UP Careera Logo" />
       <form action="http://localhost" method="post">
         <div class="login">
-          <p class="question">Have existing account?</p>
           <p>
             <!-- <label for="login_email">Email</label> -->
             <input
@@ -39,6 +41,10 @@
           <btn type="submit">Login</btn>
         </div>
       </form>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-user-circle-o"></i>
+      </a>
     </div>
     <div class="content_box">
       <div class="animation" id="animation">
@@ -47,12 +53,12 @@
           src="https://assets4.lottiefiles.com/packages/lf20_gjmecwii.json"
           background="transparent"
           speed="1"
-          style="width: 300px; height: 300px"
           hover
           loop
         ></lottie-player>
       </div>
-      <p class="paragraph">
+      <div class="main-content">      
+        <p class="paragraph">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nobis,
         deleniti voluptate velit, distinctio sequi minus commodi quibusdam at
         quam minima nulla fugit hic fugiat labore possimus illum doloremque!
@@ -69,16 +75,16 @@
             type="email"
             name="email"
             id="email"
-            placeholder="usernames@example.com"
+           
             required
           />
         </p>
         <p>
           <label for="email">Email</label>
-          <input type="text" name="last_name" id="last_name" required />
+          <input type="text" name="last_name" id="last_name"  placeholder="username@example.com" required />
         </p>
         <p>
-          <label for="phone">Phone Address</label>
+          <label for="phone">Phone Number</label>
           <input
             type="phone"
             name="phone"
@@ -104,7 +110,10 @@
       </form>
       </div>
 
+      </div>
     </div>
-    <div class="footer"></div>
+ <!--    <div class="footer">footer
+    </div> -->
   </body>
 </html>
+ 
