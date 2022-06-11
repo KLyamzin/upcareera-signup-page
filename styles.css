@@ -5,6 +5,11 @@
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.09rem;
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 .footer {
   height: 40px;
   background-color: darkgrey;
@@ -16,7 +21,6 @@ body {
 
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   align-items: flex-start;
 }
 .header {
@@ -58,13 +62,10 @@ body {
   margin: 40px auto;
   max-width: 70rem;
   display: grid;
-  /* grid-auto-flow: column; */
   grid-template-columns: 35% 65%;
 }
 .animation {
   margin: 20px auto;
-  max-width: 350px;
-  min-width: 150px;
 }
 .main-content {
   margin: 40px 20px;
